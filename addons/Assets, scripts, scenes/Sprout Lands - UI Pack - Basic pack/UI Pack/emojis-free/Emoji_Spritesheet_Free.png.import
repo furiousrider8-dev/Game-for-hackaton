@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvpkkm1j4hedo"
-path="res://.godot/imported/Emoji_Spritesheet_Free.png-3505719dd332a2b88e8d276b5e5ba2cc.ctex"
+path="res://.godot/imported/Emoji_Spritesheet_Free.png-d25a903ec34a560b0c2053b5eb94d5e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/emojis-free/Emoji_Spritesheet_Free.png"
-dest_files=["res://.godot/imported/Emoji_Spritesheet_Free.png-3505719dd332a2b88e8d276b5e5ba2cc.ctex"]
+source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/emojis-free/Emoji_Spritesheet_Free.png"
+dest_files=["res://.godot/imported/Emoji_Spritesheet_Free.png-d25a903ec34a560b0c2053b5eb94d5e8.ctex"]
 
 [params]
 

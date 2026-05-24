@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fpql22dkryoi"
-path="res://.godot/imported/Inventory_Herat_Spritesheet.png-92e005aa847cf043fd9921511823de91.ctex"
+path="res://.godot/imported/Inventory_Herat_Spritesheet.png-164c31044e589ea27a37c2f2a529906f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Herat_Spritesheet.png"
-dest_files=["res://.godot/imported/Inventory_Herat_Spritesheet.png-92e005aa847cf043fd9921511823de91.ctex"]
+source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/emojis-free/emoji style ui/Inventory_Herat_Spritesheet.png"
+dest_files=["res://.godot/imported/Inventory_Herat_Spritesheet.png-164c31044e589ea27a37c2f2a529906f.ctex"]
 
 [params]
 

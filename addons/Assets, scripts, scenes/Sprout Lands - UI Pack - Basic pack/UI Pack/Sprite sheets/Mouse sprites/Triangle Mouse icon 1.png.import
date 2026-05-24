@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blxyhdvoomok8"
-path="res://.godot/imported/Triangle Mouse icon 1.png-17eca56d8e21edf3dbdf2527409a8812.ctex"
+path="res://.godot/imported/Triangle Mouse icon 1.png-c20325055d1b2e3aca9f55a2846b9126.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 1.png"
-dest_files=["res://.godot/imported/Triangle Mouse icon 1.png-17eca56d8e21edf3dbdf2527409a8812.ctex"]
+source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 1.png"
+dest_files=["res://.godot/imported/Triangle Mouse icon 1.png-c20325055d1b2e3aca9f55a2846b9126.ctex"]
 
 [params]
 

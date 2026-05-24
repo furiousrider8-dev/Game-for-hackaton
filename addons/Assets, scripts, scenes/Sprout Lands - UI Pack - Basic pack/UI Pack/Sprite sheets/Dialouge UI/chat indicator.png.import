@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4a3dt5ak1ywp"
-path="res://.godot/imported/dialog box.png-e4fb1f3a3c504adca95399a0bf278ae4.ctex"
+uid="uid://cax028j7xmvem"
+path="res://.godot/imported/chat indicator.png-4b200aa17b0a486910ab6dda18d3f24f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Dialouge UI/dialog box.png"
-dest_files=["res://.godot/imported/dialog box.png-e4fb1f3a3c504adca95399a0bf278ae4.ctex"]
+source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Dialouge UI/chat indicator.png"
+dest_files=["res://.godot/imported/chat indicator.png-4b200aa17b0a486910ab6dda18d3f24f.ctex"]
 
 [params]
 

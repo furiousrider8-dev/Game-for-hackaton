@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dputrr5txpl52"
-path="res://.godot/imported/Premade dialog box  big.png-1152a056c820cfba79939b5dd20ffa08.ctex"
+path="res://.godot/imported/Premade dialog box  big.png-c0a46928ff275bde95181bb9d1e3194d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box  big.png"
-dest_files=["res://.godot/imported/Premade dialog box  big.png-1152a056c820cfba79939b5dd20ffa08.ctex"]
+source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Dialouge UI/Premade dialog box  big.png"
+dest_files=["res://.godot/imported/Premade dialog box  big.png-c0a46928ff275bde95181bb9d1e3194d.ctex"]
 
 [params]
 

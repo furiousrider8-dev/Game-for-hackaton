@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddgf2ws0jtioa"
-path="res://.godot/imported/Sprite sheet for Basic Pack.png-9d1f7f76de36909e02b4e96258d07faa.ctex"
+path="res://.godot/imported/Sprite sheet for Basic Pack.png-a97235bc7d0d8064778f69094df99991.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png"
-dest_files=["res://.godot/imported/Sprite sheet for Basic Pack.png-9d1f7f76de36909e02b4e96258d07faa.ctex"]
+source_file="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Sprite sheet for Basic Pack.png"
+dest_files=["res://.godot/imported/Sprite sheet for Basic Pack.png-a97235bc7d0d8064778f69094df99991.ctex"]
 
 [params]
 
