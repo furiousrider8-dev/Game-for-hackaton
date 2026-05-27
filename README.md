@@ -1,152 +1,63 @@
-<a id="readme-top"></a>
+# The Knight's Tale
 
-<!-- SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![Godot Engine](https://img.shields.io/badge/Godot-4.x-blue?logo=godot-engine&logoColor=white&style=for-the-badge)](https://godotengine.org)
+[![Platform](https://img.shields.io/badge/Platform-Web%20%2F%20HTML5-orange?style=for-the-badge)](https://furiousrider8-dev.itch.io/the-knights-tale)
+[![Status](https://img.shields.io/badge/Status-Completed%20(Hackathon)-success?style=for-the-badge)]()
 
-<!-- HEADER -->
-<br />
-<div align="center">
-    <a href="https://github.com/BudzioT/Godot_Super-Wakatime">
-        <img src="https://cloud-bo1ln2br1-hack-club-bot.vercel.app/0godotwaka22.png"  alt="Godot Wakatime"/>
-    </a>
-    <h3 align="center"> Godot Super Wakatime </h3>
-    <p align="center">
-        Tool to measure time spent in loved by many people game engine - Godot
-        <br />
-        Officially approved to use in events created by Hack Club
-        <br />
-        <br />
-        <a href="https://godotengine.org/asset-library/asset/3484">Get from Asset Lib</a>
-        ·
-        <a href="https://youtu.be/rqAc-YdVXyM">View Demo</a>
-        ·
-        <a href="https://github.com/BudzioT/Godot_Super-Wakatime/issues/new">Report Bug / Request Feature</a>
-    </p>
-</div>
+An atmospheric, fast-paced 2D precision platformer built from scratch using the **Godot 4 Engine**. Navigate treacherous terrain, time your jumps flawlessly, avoid lethal enemies, and survive the punishing killzones to guide our noble knight through a dangerous medieval trial.
 
-<!-- CONTENTS -->
-<details>
-    <summary>Table of Contents</summary>
-    <ol>
-        <li>
-            <a href="#about">About The Project</a>
-            <ul>
-                <li><a href="#built-with">Built Using</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#getting-started">Getting Started</a>
-            <ul>
-                <li><a href="#installation">Installation</a></li>
-            </ul>
-        </li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#license">License</a></li>
-    </ol>
-</details>
+> **Play directly in your browser on itch.io:**
+> ▶️ **[Play The Knight's Tale on itch.io](https://furiousrider8-dev.itch.io/the-knights-tale)**
 
+---
 
-<!-- ABOUT -->
-## About The Project
-<br />
+## 🕹️ Gameplay & Controls
 
-[![Product Screenshot][product-screenshot]](https://waka.hackclub.com)
+Take control of the Knight and navigate through various obstacles. Timing, precision, and quick reflexes are critical to avoiding instant defeat.
 
-This tool can successfully measure time spent building your games or apps in Godot.
-<br />
-Here's why:
-* It differentiates between switching a scene and script
-* It counts key presses as coding and mouse clicks as building scene
-* Changing scene structure results in a heartbeat sent
-* It correctly detects OS, machine name, language, editor, files
-* It can detect your cursor line and position
-* Time is split between: Building, Coding, Testing
-* In the future it will also detect testing your projects
+| Action | Keyboard Input |
+| :--- | :--- |
+| **Move Left** | `A` or `Left Arrow` |
+| **Move Right** | `D` or `Right Arrow` | 
+| **Jump** | `Spacebar` |
 
-It works on both Linux and Windows, it wasn't tested on macOS yet
-<br />
-You can also see your time spent in the editor itself:
-[![Time in editor][time-screenshot]]
+---
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+## Key Features
 
+* **Dynamic Platforming Mechanics:** High-precision jumping and movement physics built with responsiveness.
+* **Lethal Killzones:** Watch your step! Enemy slimes out to get you, and no escape once fallen into the void.
+* **Contains proper music and sfx:** Complete with background music and sfx for pickups and killzones.
+* **Web-Optimized Deployment:** Specially optimized bundle utilizing modern multithreading structures (`SharedArrayBuffer`) for seamless browser playback.
 
-### Built Using
-I used the Ouch! CLI tool for decompression of files <br />
-This project was built using one simple, yet powerful language.<br />
-It required a lot of workarounds, but it was a pleasure to use it
-* [![GDScript][Godot]][Godot-url]
-* [![Ouch!][Ouch-shield]][Ouch-url]
+---
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+## Running the Project Locally
 
-<!-- GETTING STARTED -->
-## Getting Started
-How to install and use this software? It's easy!
+If you want to open this project inside the Godot Editor or modify the code:
 
-### Installation
-You can either download it from the [Godot Asset Library](https://godotengine.org/asset-library/asset/3484).
-<br />Or you can manually install it, here's how to do it!
-1. Clone the repository
-    ```sh
-    git clone https://github.com/BudzioT/Godot_Super-Wakatime.git
-    ```
-2. Go into your project
-3. Insert the entire `./addons` folder into your project `res://` directory
+### Prerequisites
+* Download and install **Godot 4.x** (Standard Desktop Version).
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+### Setup Instructions
+1. Clone this repository down to your computer:
+```bash
+   git clone https://github.com/furiousrider8-dev/the-knights-tale.git
 
-<!-- USAGE -->
-## Usage
-Don't know how to use this plugin? Here are the steps:
-1. Turn on the plugin in your plugins. In your `Project -> Project Settings -> Plugins -> `Click the `Enable` checkbox near this plugin
-2. If prompted for API key, provide it from Wakatime website
-3. if there is an issue with it, please manually create `~/.wakatime.cfg` file with these contents:
-    ```sh
-    [settings]
-    api_key=xxxx
-    ```
-    Where xxxx is your api key
-<br /><br />
-If you are coming from Hack Club use this:
-    ```sh
-    [settings]
-    api_url = https://hackatime.hackclub.com/api/hackatime/v1
-    api_key=xxxx
-    ```
-4. Wakatime CLI should have been installed automatically along with Ouch! Decompression library
-5. Work on your project! You should see your results on either Wakatime or Hackatime!
-6. You can also see your time at the bottom panel
+2. Launch the Godot Project Manager.
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+3. Click the Import button on the right panel.
 
-<!-- LICENSE -->
-## License
+4. Browse to the folder containing this project, select the project.godot file, and hit Import & Edit.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+5. Press F5 inside the editor to run and test the game locally!
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Credits
+* **Developer** - furiousrider8-dev
+* **Assets** - https://brackeysgames.itch.io/
+* **Engine** - Godot 4.6.1
 
-
-<!-- URLS -->
-[contributors-shield]: https://img.shields.io/github/contributors/budziot/Godot_Super-Wakatime?style=for-the-badge
-[contributors-url]: https://github.com/BudzioT/Godot_Super-Wakatime/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/budziot/Godot_Super-Wakatime?style=for-the-badge
-[forks-url]: https://github.com/BudzioT/Godot_Super-Wakatime/forks
-[stars-shield]: https://img.shields.io/github/stars/budziot/Godot_Super-Wakatime?style=for-the-badge
-[stars-url]: https://github.com/BudzioT/Godot_Super-Wakatime/stargazers
-[issues-shield]: https://img.shields.io/github/issues/budziot/Godot_Super-Wakatime?style=for-the-badge
-[issues-url]: https://github.com/BudzioT/Godot_Super-Wakatime/issues
-[license-shield]: https://img.shields.io/github/license/budziot/Godot_Super-Wakatime?style=for-the-badge
-[license-url]: https://github.com/BudzioT/Godot_Super-Wakatime/blob/master/addons/godot_super-wakatime/LICENSE
-[product-screenshot]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/0image.png
-[product-logo]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/2godotwaka2.png
-[Godot]: https://img.shields.io/badge/Godot%20Engine-478CBF?logo=godotengine&logoColor=fff&style=flat
-[Godot-url]: https://godotengine.org/
-[Ouch-shield]: https://img.shields.io/badge/Ouch!-tool-blue?label=Ouch!
-[Ouch-url]: https://github.com/ouch-org/ouch
-[time-screenshot]: https://cloud-l88kldf50-hack-club-bot.vercel.app/0image.png
+## License - MIT license
+For more information, visit LICENSE
+  
