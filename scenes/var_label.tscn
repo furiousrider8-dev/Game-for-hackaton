@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cu00y1c8f3hbm"]
+
+[ext_resource type="FontFile" uid="uid://5kknbg26t02w" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/fonts/PixelOperator8-Bold.ttf" id="1_wmewo"]
+
+[node name="VarLabel" type="Label" unique_id=1268682387]
+offset_left = 805.0
+offset_top = -147.0
+offset_right = 890.0
+offset_bottom = -117.0
+theme_override_colors/font_color = Color(0.038295906, 0.25646198, 0.9675812, 1)
+theme_override_fonts/font = ExtResource("1_wmewo")
+theme_override_font_sizes/font_size = 8
+text = "You collected x Coins!"
+vertical_alignment = 1
+autowrap_mode = 2
