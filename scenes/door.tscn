@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://yw5072s1d41f"]
+
+[ext_resource type="Script" uid="uid://biharu14ab3u4" path="res://scripts/door.gd" id="1_83dcw"]
+[ext_resource type="Texture2D" uid="uid://dbn40t1pycyf6" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/Pixel Art Door Pack/Door 1.png" id="2_la1wf"]
+[ext_resource type="FontFile" uid="uid://chg7on8f8pcgl" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/fonts/PixelOperator8.ttf" id="3_18pbm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5w8r"]
+size = Vector2(29, 61)
+
+[node name="Door" type="Area2D" unique_id=471333573]
+collision_mask = 2
+script = ExtResource("1_83dcw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1394334649]
+position = Vector2(11.75, 20.499998)
+scale = Vector2(0.57272726, 0.6057693)
+texture = ExtResource("2_la1wf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1867172390]
+position = Vector2(11.5, 20.5)
+shape = SubResource("RectangleShape2D_q5w8r")
+
+[node name="Label" type="Label" parent="." unique_id=2092749533]
+offset_left = 27.0
+offset_top = 44.0
+offset_right = 156.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.1761148, 0.5509751, 0.985033, 1)
+theme_override_fonts/font = ExtResource("3_18pbm")
+theme_override_font_sizes/font_size = 8
+text = "Press 'E' to interact"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

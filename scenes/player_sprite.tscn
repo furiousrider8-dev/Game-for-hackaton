@@ -204,7 +204,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_8slkf"]
 radius = 5.0
 
-[node name="PlayerSprite" type="CharacterBody2D" unique_id=1542408473]
+[node name="PlayerSprite" type="CharacterBody2D" unique_id=1542408473 groups=["player"]]
 z_index = 5
 collision_layer = 2
 script = ExtResource("1_dgbx1")

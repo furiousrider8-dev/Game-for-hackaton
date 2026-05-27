@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cch077rpedh3h" path="res://scenes/moving_platform 2.tscn" id="8_kafig"]
 [ext_resource type="PackedScene" uid="uid://cpsebg2lxc8ax" path="res://scenes/coin.tscn" id="8_uj3ay"]
 [ext_resource type="PackedScene" uid="uid://chfhljou331fq" path="res://scenes/enemy.tscn" id="9_0uci5"]
+[ext_resource type="FontFile" uid="uid://5kknbg26t02w" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/fonts/PixelOperator8-Bold.ttf" id="9_ieons"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("4_fsvok")
@@ -456,76 +457,128 @@ zoom = Vector2(4, 4)
 limit_bottom = 95
 position_smoothing_enabled = true
 
-[node name="Node" type="Node" parent="." unique_id=1135446254]
+[node name="Coins" type="Node" parent="." unique_id=1135446254]
 
-[node name="Coin" parent="Node" unique_id=8144578 instance=ExtResource("8_uj3ay")]
+[node name="Coin" parent="Coins" unique_id=8144578 instance=ExtResource("8_uj3ay")]
 position = Vector2(88, -5)
 
-[node name="Coin2" parent="Node" unique_id=166062419 instance=ExtResource("8_uj3ay")]
+[node name="Coin2" parent="Coins" unique_id=166062419 instance=ExtResource("8_uj3ay")]
 position = Vector2(72, -5)
 
-[node name="Coin3" parent="Node" unique_id=1683477222 instance=ExtResource("8_uj3ay")]
+[node name="Coin3" parent="Coins" unique_id=1683477222 instance=ExtResource("8_uj3ay")]
 position = Vector2(104, -5)
 
-[node name="Coin4" parent="Node" unique_id=1992982871 instance=ExtResource("8_uj3ay")]
+[node name="Coin4" parent="Coins" unique_id=1992982871 instance=ExtResource("8_uj3ay")]
 position = Vector2(216, 43)
 
-[node name="Coin5" parent="Node" unique_id=1129487810 instance=ExtResource("8_uj3ay")]
+[node name="Coin5" parent="Coins" unique_id=1129487810 instance=ExtResource("8_uj3ay")]
 position = Vector2(233, 43)
 
-[node name="Coin24" parent="Node" unique_id=1975119706 instance=ExtResource("8_uj3ay")]
+[node name="Coin24" parent="Coins" unique_id=1975119706 instance=ExtResource("8_uj3ay")]
 position = Vector2(808, -87)
 
-[node name="Coin23" parent="Node" unique_id=932235082 instance=ExtResource("8_uj3ay")]
+[node name="Coin23" parent="Coins" unique_id=932235082 instance=ExtResource("8_uj3ay")]
 position = Vector2(743, -182)
 
-[node name="Coin22" parent="Node" unique_id=244650253 instance=ExtResource("8_uj3ay")]
+[node name="Coin22" parent="Coins" unique_id=244650253 instance=ExtResource("8_uj3ay")]
 position = Vector2(728, -181)
 
-[node name="Coin21" parent="Node" unique_id=1308644105 instance=ExtResource("8_uj3ay")]
+[node name="Coin21" parent="Coins" unique_id=1308644105 instance=ExtResource("8_uj3ay")]
 position = Vector2(696, -22)
 
-[node name="Coin20" parent="Node" unique_id=1913255043 instance=ExtResource("8_uj3ay")]
+[node name="Coin20" parent="Coins" unique_id=1913255043 instance=ExtResource("8_uj3ay")]
 position = Vector2(682, -22)
 
-[node name="Coin19" parent="Node" unique_id=1762168280 instance=ExtResource("8_uj3ay")]
+[node name="Coin19" parent="Coins" unique_id=1762168280 instance=ExtResource("8_uj3ay")]
 position = Vector2(648, -7)
 
-[node name="Coin18" parent="Node" unique_id=670420433 instance=ExtResource("8_uj3ay")]
+[node name="Coin18" parent="Coins" unique_id=670420433 instance=ExtResource("8_uj3ay")]
 position = Vector2(391, 58)
 
-[node name="Coin17" parent="Node" unique_id=192086899 instance=ExtResource("8_uj3ay")]
+[node name="Coin17" parent="Coins" unique_id=192086899 instance=ExtResource("8_uj3ay")]
 position = Vector2(360, 58)
 
-[node name="Coin16" parent="Node" unique_id=1293238324 instance=ExtResource("8_uj3ay")]
+[node name="Coin16" parent="Coins" unique_id=1293238324 instance=ExtResource("8_uj3ay")]
 position = Vector2(616, -100)
 
-[node name="Coin15" parent="Node" unique_id=538765649 instance=ExtResource("8_uj3ay")]
+[node name="Coin15" parent="Coins" unique_id=538765649 instance=ExtResource("8_uj3ay")]
 position = Vector2(553, -86)
 
-[node name="Coin14" parent="Node" unique_id=386954009 instance=ExtResource("8_uj3ay")]
+[node name="Coin14" parent="Coins" unique_id=386954009 instance=ExtResource("8_uj3ay")]
 position = Vector2(585, -85)
 
-[node name="Coin13" parent="Node" unique_id=928188837 instance=ExtResource("8_uj3ay")]
+[node name="Coin13" parent="Coins" unique_id=928188837 instance=ExtResource("8_uj3ay")]
 position = Vector2(472, -69)
 
-[node name="Coin12" parent="Node" unique_id=1610579492 instance=ExtResource("8_uj3ay")]
+[node name="Coin12" parent="Coins" unique_id=1610579492 instance=ExtResource("8_uj3ay")]
 position = Vector2(457, -52)
 
-[node name="Coin11" parent="Node" unique_id=551034904 instance=ExtResource("8_uj3ay")]
+[node name="Coin11" parent="Coins" unique_id=551034904 instance=ExtResource("8_uj3ay")]
 position = Vector2(248, -101)
 
-[node name="Coin10" parent="Node" unique_id=647687105 instance=ExtResource("8_uj3ay")]
+[node name="Coin10" parent="Coins" unique_id=647687105 instance=ExtResource("8_uj3ay")]
 position = Vector2(407, -22)
 
-[node name="Coin9" parent="Node" unique_id=1912477367 instance=ExtResource("8_uj3ay")]
+[node name="Coin9" parent="Coins" unique_id=1912477367 instance=ExtResource("8_uj3ay")]
 position = Vector2(392, -22)
 
-[node name="Coin8" parent="Node" unique_id=1197532328 instance=ExtResource("8_uj3ay")]
+[node name="Coin8" parent="Coins" unique_id=1197532328 instance=ExtResource("8_uj3ay")]
 position = Vector2(329, -5)
 
-[node name="Coin7" parent="Node" unique_id=1524160703 instance=ExtResource("8_uj3ay")]
+[node name="Coin7" parent="Coins" unique_id=1524160703 instance=ExtResource("8_uj3ay")]
 position = Vector2(296, 11)
 
-[node name="Coin6" parent="Node" unique_id=1559661485 instance=ExtResource("8_uj3ay")]
+[node name="Coin6" parent="Coins" unique_id=1559661485 instance=ExtResource("8_uj3ay")]
 position = Vector2(152, 43)
+
+[node name="lvl2label" type="Label" parent="." unique_id=717633285]
+offset_left = 19.0
+offset_top = -83.0
+offset_right = 94.0
+offset_bottom = -48.0
+theme_override_colors/font_color = Color(0.3095753, 0.60220164, 0.62592983, 1)
+theme_override_fonts/font = ExtResource("9_ieons")
+text = "Level 2!!"
+autowrap_mode = 2
+
+[node name="label" type="Label" parent="." unique_id=1191973320]
+offset_left = 141.0
+offset_top = -17.0
+offset_right = 269.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.3095753, 0.60220164, 0.62592983, 1)
+theme_override_fonts/font = ExtResource("9_ieons")
+text = "Easy for you"
+autowrap_mode = 2
+
+[node name="label3" type="Label" parent="." unique_id=1223316135]
+offset_left = 795.0
+offset_top = -220.0
+offset_right = 867.0
+offset_bottom = -179.0
+theme_override_colors/font_color = Color(0.02474065, 0.26003298, 0.6022141, 1)
+theme_override_fonts/font = ExtResource("9_ieons")
+theme_override_font_sizes/font_size = 8
+text = "Beneath you lies the final destination"
+autowrap_mode = 2
+
+[node name="label4" type="Label" parent="." unique_id=903442434]
+offset_left = 845.0
+offset_top = -109.0
+offset_right = 917.0
+offset_bottom = -68.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_ieons")
+theme_override_font_sizes/font_size = 8
+text = "Thank you for playing!!"
+autowrap_mode = 2
+
+[node name="label2" type="Label" parent="." unique_id=881739231]
+offset_left = 422.0
+offset_top = -151.0
+offset_right = 550.0
+offset_bottom = -97.0
+theme_override_colors/font_color = Color(0.8628588, 0.77893, 0.22609839, 1)
+theme_override_fonts/font = ExtResource("9_ieons")
+text = "Collect the coins!!"
+autowrap_mode = 2
