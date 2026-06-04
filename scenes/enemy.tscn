@@ -41,7 +41,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nenq2"]
-size = Vector2(12, 13)
+size = Vector2(12, 10.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
+size = Vector2(12, 1)
 
 [node name="Enemy" type="Node2D" unique_id=1359648183]
 script = ExtResource("1_qi2p4")
@@ -56,7 +59,7 @@ frame_progress = 0.44959274
 [node name="Killzone" parent="." unique_id=137861789 instance=ExtResource("2_qi2p4")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=794435069]
-position = Vector2(0, -7)
+position = Vector2(0, -5.75)
 shape = SubResource("RectangleShape2D_nenq2")
 
 [node name="RayCastLeft" type="RayCast2D" parent="." unique_id=2002798070]
@@ -66,3 +69,10 @@ target_position = Vector2(-10, 0)
 [node name="RayCastRight" type="RayCast2D" parent="." unique_id=1895509102]
 position = Vector2(0, -7)
 target_position = Vector2(10, 0)
+
+[node name="KaboomArea" type="Area2D" parent="." unique_id=21645105]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KaboomArea" unique_id=1019770519]
+position = Vector2(0, -12.5)
+shape = SubResource("RectangleShape2D_4ra3w")
