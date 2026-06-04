@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cpv27fjutsuq5"]
+
+[ext_resource type="Script" uid="uid://cj3a3lp7r23nb" path="res://scripts/power_up_block_1.gd" id="1_p2jia"]
+[ext_resource type="Texture2D" uid="uid://cm5348jeelka4" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/sprites/world_tileset.png" id="2_b5hpp"]
+[ext_resource type="FontFile" uid="uid://chg7on8f8pcgl" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/fonts/PixelOperator8.ttf" id="3_7fkl4"]
+[ext_resource type="AudioStream" uid="uid://bunkxemply700" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/sounds/power_up.wav" id="3_s66or"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3yms"]
+atlas = ExtResource("2_b5hpp")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m877x"]
+size = Vector2(16, 15)
+
+[node name="PowerUpBlock1" type="Area2D" unique_id=1383947869]
+collision_mask = 2
+script = ExtResource("1_p2jia")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1583230820]
+texture = SubResource("AtlasTexture_a3yms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=451516967]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_m877x")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1438803197]
+stream = ExtResource("3_s66or")
+
+[node name="Label" type="Label" parent="." unique_id=426180321]
+offset_left = 8.0
+offset_top = -23.0
+offset_right = 34.0
+offset_bottom = -2.0
+theme_override_fonts/font = ExtResource("3_7fkl4")
+theme_override_font_sizes/font_size = 8
+text = "Press E to Interact"
+autowrap_mode = 2

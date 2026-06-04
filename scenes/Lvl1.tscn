@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://chg7on8f8pcgl" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/fonts/PixelOperator8.ttf" id="8_gee14"]
 [ext_resource type="FontFile" uid="uid://5kknbg26t02w" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/fonts/PixelOperator8-Bold.ttf" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://yw5072s1d41f" path="res://scenes/door.tscn" id="11_yiohx"]
+[ext_resource type="PackedScene" uid="uid://cpv27fjutsuq5" path="res://scenes/power_up_block_1.tscn" id="12_mkjed"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -432,10 +433,10 @@ position = Vector2(297, -7)
 position = Vector2(314, -4)
 
 [node name="Coin6" parent="Coins" unique_id=827632800 instance=ExtResource("5_iywne")]
-position = Vector2(332, -5)
+position = Vector2(330, -4)
 
 [node name="Coin7" parent="Coins" unique_id=1040524033 instance=ExtResource("5_iywne")]
-position = Vector2(349, -7)
+position = Vector2(345, -6)
 
 [node name="Coin9" parent="Coins" unique_id=1291488359 instance=ExtResource("5_iywne")]
 position = Vector2(264, -133)
@@ -520,8 +521,9 @@ tile_map_data = PackedByteArray("AADy/wMAAAAAAA8AAADy/wQAAAAAAA8AAADy/wUAAAAAAA8
 tile_set = SubResource("TileSet_0tnpc")
 metadata/_edit_lock_ = true
 
-[node name="Enemy" parent="." unique_id=377367058 instance=ExtResource("7_u5sy4")]
+[node name="Enemy" parent="." unique_id=377367058 node_paths=PackedStringArray("linked_block") instance=ExtResource("7_u5sy4")]
 position = Vector2(280, 0)
+linked_block = NodePath("../PowerUpBlock1")
 
 [node name="Labels" type="Node" parent="." unique_id=176473728]
 
@@ -551,10 +553,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="Labels" unique_id=2053213317]
-offset_left = 255.0
-offset_top = -34.0
-offset_right = 365.0
-offset_bottom = -15.0
+offset_left = 195.0
+offset_top = -58.0
+offset_right = 305.0
+offset_bottom = -39.0
 theme_override_colors/font_color = Color(1, 0.33876982, 0.3046036, 1)
 theme_override_fonts/font = ExtResource("8_gee14")
 theme_override_font_sizes/font_size = 8
@@ -587,3 +589,6 @@ autowrap_mode = 3
 
 [node name="Door" parent="." unique_id=471333573 instance=ExtResource("11_yiohx")]
 position = Vector2(741, -115)
+
+[node name="PowerUpBlock1" parent="." unique_id=1383947869 instance=ExtResource("12_mkjed")]
+position = Vector2(281, -7)

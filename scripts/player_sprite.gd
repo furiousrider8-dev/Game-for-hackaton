@@ -36,6 +36,16 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+func apply_invincibility(duration: float) -> void:
+	is_invincible = true
+	var tween = create_tween().set_loops()
+	tween.tween_property(self, "modulate", Color(1, 1, 0, 0.5), 0.15)
+	tween.tween_property(self, "modulate", Color.WHITE, 0.15)
+	await get_tree().create_timer(duration).timeout
+	is_invincible = false
+	modulate = Color.WHITE
+	tween.kill()
+
 func die() -> void:
 	if is_invincible:
 		return                      

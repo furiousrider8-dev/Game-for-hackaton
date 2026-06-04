@@ -5,12 +5,16 @@ extends Area2D
 
 
 func _on_body_entered(body):
-	print("You Died!")
-	Engine.time_scale = 0.5
-	body.die() 
-	$CollisionShape2D.queue_free()
-	%die.play()
-	timer.start()
+	if body.is_in_group("player"):
+		if body.is_invincible:    
+			return
+		else:
+			print("You Died!")
+			Engine.time_scale = 0.5
+			body.die()
+			$CollisionShape2D.queue_free()
+			%die.play()
+			timer.start()
 
 
 func _on_timer_timeout() -> void:
