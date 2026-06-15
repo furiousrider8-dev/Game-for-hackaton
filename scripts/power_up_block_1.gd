@@ -8,7 +8,7 @@ var player_ref = null
 
 const POWERUP_NAMES = {
 	0: "Speed Boost",
-	1: "Jump Boost", 
+	1: "Jump Boost",
 	2: "Invincibility"
 }
 const DURATION = 10.0
@@ -53,22 +53,7 @@ func _collect() -> void:
 	$Sprite2D.hide()
 	$CollisionShape2D.set_deferred("disabled", true)
 	audio.play()
-	_apply_powerup(player_ref)
-	await get_tree().create_timer(3.0).timeout
+	Dialogue_System.show_powerup(POWERUP_NAMES[powerup_type], DURATION)
+	player_ref.apply_powerup(powerup_type)
 	await audio.finished
 	queue_free()
-
-func _apply_powerup(body: Node) -> void:
-	match powerup_type:
-		0:  # Speed
-			body.SPEED += 100.0
-			await get_tree().create_timer(DURATION).timeout
-			body.SPEED -= 100.0
-		1:  # Jump
-			body.JUMP_VELOCITY -= 200.0
-			await get_tree().create_timer(DURATION).timeout
-			body.JUMP_VELOCITY += 200.0
-		2:  # Invincibility
-			body.is_invincible = true
-			await get_tree().create_timer(DURATION).timeout
-			body.is_invincible = false

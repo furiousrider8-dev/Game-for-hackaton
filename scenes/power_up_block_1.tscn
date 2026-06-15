@@ -27,10 +27,11 @@ shape = SubResource("RectangleShape2D_m877x")
 stream = ExtResource("3_s66or")
 
 [node name="Label" type="Label" parent="." unique_id=426180321]
-offset_left = 8.0
-offset_top = -23.0
-offset_right = 34.0
-offset_bottom = -2.0
+offset_left = -1.0
+offset_top = -27.0
+offset_right = 66.0
+offset_bottom = -8.0
+theme_override_colors/font_color = Color(0.6705979, 0.8370651, 0.9026797, 1)
 theme_override_fonts/font = ExtResource("3_7fkl4")
 theme_override_font_sizes/font_size = 8
 text = "Press E to Interact"

@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://cfp7moa1uyfrx"]
+
+[ext_resource type="Script" uid="uid://byaf64bdgrb7b" path="res://scripts/dialogue_system.gd" id="1_n00l3"]
+[ext_resource type="Texture2D" uid="uid://rxq46xn4r4rn" path="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Dialouge UI/Premade dialog box medium.png" id="1_sofqc"]
+[ext_resource type="FontFile" uid="uid://bsy4bku4c5cfm" path="res://addons/Assets, scripts, scenes/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_gj61q"]
+[ext_resource type="Texture2D" uid="uid://bsbjn0qy6na6r" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/sprites/knight.png" id="4_gj61q"]
+[ext_resource type="Texture2D" uid="uid://d2xjgjc8krjp0" path="res://addons/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Dialouge UI/dialog box small.png" id="4_xt0xa"]
+[ext_resource type="FontFile" uid="uid://d33sntqcna7bc" path="res://addons/Assets, scripts, scenes/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="5_i713c"]
+[ext_resource type="Texture2D" uid="uid://in3202nsr6sl" path="res://assets/Assets, scripts, scenes/Sprout Lands - UI Pack - Basic pack/UI Pack/Sprite sheets/Dialouge UI/dialog box big.png" id="7_xt0xa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xt0xa"]
+atlas = ExtResource("4_gj61q")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i713c"]
+atlas = ExtResource("7_xt0xa")
+
+[node name="TutorialDialogue_System" type="CanvasLayer" unique_id=1311793820]
+process_mode = 3
+script = ExtResource("1_n00l3")
+
+[node name="Panel" type="NinePatchRect" parent="." unique_id=1483961007]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -179.0
+offset_top = -20.0
+offset_right = 354.0
+offset_bottom = 106.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sofqc")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="MessageLabel" type="Label" parent="Panel" unique_id=695619507]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 42.0
+offset_right = 438.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_gj61q")
+autowrap_mode = 2
+
+[node name="ContinueLabel" type="Label" parent="Panel" unique_id=1446714067]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 48.0
+offset_right = 503.0
+offset_bottom = 125.0
+theme_override_colors/font_color = Color(0.56372356, 0.29909918, 0, 1)
+theme_override_fonts/font = ExtResource("3_gj61q")
+theme_override_font_sizes/font_size = 8
+text = "Press E/Spacebar to Countinue"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel" unique_id=907723356]
+position = Vector2(65.999985, 55.999996)
+scale = Vector2(3.1093738, 2.7031248)
+texture = SubResource("AtlasTexture_xt0xa")
+
+[node name="PowerupPanel" type="NinePatchRect" parent="." unique_id=1573303455]
+offset_right = 331.0
+offset_bottom = 92.0
+texture = ExtResource("4_xt0xa")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="PowerupLabel" type="Label" parent="PowerupPanel" unique_id=1351901717]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 19.0
+offset_right = 325.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0.35823056, 0.611166, 0.91111815, 1)
+theme_override_fonts/font = ExtResource("5_i713c")
+
+[node name="CheckpointPanel" type="NinePatchRect" parent="." unique_id=1620645653]
+offset_left = 814.0
+offset_top = -14.0
+offset_right = 1143.0
+offset_bottom = 98.0
+texture = SubResource("AtlasTexture_i713c")
+
+[node name="CheckpointLabel" type="Label" parent="CheckpointPanel" unique_id=1213978730]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 28.0
+offset_right = 317.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.4392157, 0.22745098, 0.92941177, 1)
+theme_override_fonts/font = ExtResource("5_i713c")

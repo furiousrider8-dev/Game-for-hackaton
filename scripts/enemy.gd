@@ -4,6 +4,9 @@ const SPEED = 60
 var direction = 1
 var is_dead = false
 
+# Added flag to let the killzone know this enemy is being defeated
+var is_being_stomped = false
+
 @export var linked_block: Node = null
 
 @onready var ray_cast_left: RayCast2D = $RayCastLeft
@@ -16,8 +19,9 @@ func _ready() -> void:
 	kaboom_area.body_entered.connect(_on_kaboom_area_body_entered)
 
 func _process(delta: float) -> void:
-	if is_dead:
+	if is_dead or is_being_stomped:
 		return
+		
 	if ray_cast_right.is_colliding():
 		direction = -1
 		animated_sprite_2d.flip_h = true
@@ -27,14 +31,23 @@ func _process(delta: float) -> void:
 	position.x += direction * SPEED * delta
 
 func _on_kaboom_area_body_entered(body: Node) -> void:
-	if is_dead:
+	print("Kaboom Fired")
+	if is_dead or is_being_stomped:
 		return
-	print("KaboomArea hit by: ", body.name)
-	print("Player velocity.y: ", body.velocity.y)
+		
 	if body.is_in_group("player") and body.velocity.y > 0:
-		print("STOMP DETECTED")
-		killzone.monitoring = false
-		killzone.get_node("CollisionShape2D").set_deferred("disabled", true)
+		# Set the flag immediately so the killzone collision check can read it
+		is_being_stomped = true
+		
+		# Cleanly disable collision tracking areas 
+		kaboom_area.set_deferred("monitoring", false)
+		kaboom_area.get_node("CollisionShape2D").set_deferred("disabled", true)
+		
+		killzone.set_deferred("monitoring", false)
+		if killzone.has_node("CollisionShape2D"):
+			killzone.get_node("CollisionShape2D").set_deferred("disabled", true)
+		
+		# Bounce player up
 		body.velocity.y = -200.0
 		die()
 

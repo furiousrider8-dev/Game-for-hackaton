@@ -293,7 +293,6 @@ metadata/_edit_lock_ = true
 follow_viewport_enabled = true
 
 [node name="PlayButton" type="TextureButton" parent="CanvasLayer" unique_id=330965765]
-anchors_preset = -1
 offset_left = 379.0
 offset_top = -127.0
 offset_right = 493.0
@@ -302,7 +301,6 @@ texture_normal = SubResource("AtlasTexture_rtw2f")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=197700387]
-anchors_preset = -1
 offset_left = 82.0
 offset_top = -157.0
 offset_right = 166.0
@@ -314,7 +312,6 @@ text = "The "
 autowrap_mode = 2
 
 [node name="Label2" type="Label" parent="CanvasLayer" unique_id=1135243874]
-anchors_preset = -1
 offset_left = 532.0
 offset_top = -129.0
 offset_right = 710.0
@@ -326,7 +323,6 @@ text = "Click 'PLAY' for some fun :)"
 autowrap_mode = 2
 
 [node name="Label3" type="Label" parent="CanvasLayer" unique_id=1761306002]
-anchors_preset = -1
 offset_left = 85.0
 offset_top = -120.0
 offset_right = 284.0
@@ -338,7 +334,6 @@ text = "Knight's"
 autowrap_mode = 2
 
 [node name="Label4" type="Label" parent="CanvasLayer" unique_id=1605103375]
-anchors_preset = -1
 offset_left = 85.0
 offset_top = -86.0
 offset_right = 284.0

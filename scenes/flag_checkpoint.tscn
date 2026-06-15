@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://djp1wrs6jo72y"]
+
+[ext_resource type="Script" uid="uid://bde77elhrpr1" path="res://scripts/flag_checkpoint.gd" id="1_wvwid"]
+[ext_resource type="Texture2D" uid="uid://cm5348jeelka4" path="res://assets/Assets, scripts, scenes/brackeys_platformer_assets/Assets/sprites/world_tileset.png" id="2_wrpu1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ab18"]
+atlas = ExtResource("2_wrpu1")
+region = Rect2(16, 96, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5lcsc"]
+size = Vector2(16, 16)
+
+[node name="Flag_Checkpoint" type="Node2D" unique_id=1251031351]
+script = ExtResource("1_wvwid")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1970908444]
+position = Vector2(0.5, -0.5)
+scale = Vector2(1.0625, 1.0625)
+texture = SubResource("AtlasTexture_8ab18")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1644993126]
+visibility_layer = 2
+position = Vector2(0.5, -0.5)
+scale = Vector2(1.0625, 1.0625)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1725568062]
+visibility_layer = 2
+position = Vector2(1.1920929e-07, -0.94117665)
+shape = SubResource("RectangleShape2D_5lcsc")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]
